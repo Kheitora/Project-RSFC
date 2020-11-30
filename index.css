@@ -8,12 +8,35 @@ body
    background-attachment: fixed;
 }
 
-#Menu
-{
-   
+menu{
+    margin-top: 200px;
+    margin-left: 25px;
+    background-color: grey;
 }
 
 #p
 {
    color: black;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif ;
+    display: flex;
+    justify-content: space-between; 
+}
+ul {
+    list-style-type: none;
+}
+
+menulist {
+ h1;
+}
+Social {
+    h2;
+}
+
+blok1 {
+margin-top: 300px;
+margin-right:500px; 
+background-color: grey;
 }
