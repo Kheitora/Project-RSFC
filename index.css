@@ -1,42 +1,70 @@
-body 
+#blok1 
 {
-   background-image: url("");
-   background-color:white;
-   background-repeat: no-repeat;
-   background-position: center;
-   background-size: cover;
-   background-attachment: fixed;
-}
-
-menu{
-    margin-top: 200px;
-    margin-left: 25px;
-    background-color: grey;
-}
-
-#p
-{
-   color: black;
-}
-
-body {
-    font-family: Arial, Helvetica, sans-serif ;
-    display: flex;
-    justify-content: space-between; 
-}
-ul {
-    list-style-type: none;
-}
-
-menulist {
- h1;
-}
-Social {
-    h2;
-}
-
-blok1 {
 margin-top: 300px;
 margin-right:500px; 
 background-color: grey;
 }
+
+#menu
+{
+    height: 200px;
+    width: 25px;
+    background-color: ;
+	margin-top: 702px;
+	float: left;
+}
+
+body
+{
+    font-family: Arial, Helvetica, sans-serif;
+	justify-content: center;
+	display: flex;
+}
+
+p
+{
+   color: black;
+   font-size: 75%;
+}
+
+ul {
+    list-style-type: none;
+}
+
+h1
+{
+  color: black;
+  font-size: 100%;
+  
+}
+
+h2
+{
+  color: black;
+  font-size: 50%;
+}
+
+center
+{ 
+ 
+  top: 50%; 
+  left: 50%; 
+  margin-top: -100px; 
+  margin-left: -100px;
+}
+
+#menulist 
+{  
+ height: 200px;
+ width: 125px;
+ background-color: transparent;
+ border-style: double;
+}
+
+#Social 
+{
+ 
+}
+
+
+
