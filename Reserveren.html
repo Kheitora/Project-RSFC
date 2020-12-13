@@ -33,7 +33,39 @@
             </div>
        
             <div id="blok1">
-			<p>Reserverings formulier</p>
+			
+		
+		    <form action="reserveren.php" method="post">
+			<div>
+			<label for="naam">Volledige naam</label>
+			<input type="text" id="naam" name="naam" required>
+			</div>
+			
+			<div>
+			<label for="vereniging">Vereniging</label>
+			<input type="text" id="vereniging" name="vereniging" required>
+			</div>
+			
+			<div>
+			<label for="datum">Datum</label>
+			<input type="date" id="datum" name="datum" required>
+			</div>
+			
+			<div>
+			<label for="email">Email</label>
+			<input type="email" id="email" name="email" required>
+			</div>
+			
+			<div>
+			<label for="telnummer">Telefoon nummer</label>
+			<input type="text" id="telnummer" name="telnummer">
+			</div>
+			
+			<div>
+			<button type="submit">Reservering aanvragen</button>
+			</div>
+			
+			</form>
 			</div>
 			</div>
     </body>
