@@ -3,7 +3,7 @@
 $conn = mysqli_connect()
 
 if (!$conn) {
-    die("Site niet bereikbaar " . mysqli_connect_error())
+    die("Site niet bereikbaar " . mysqli_connect_error());
 }
   
   $delete = "DELETE FROM members WHERE (volledige_naam, vereniging, datum, email, telnummer)";
