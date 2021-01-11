@@ -6,7 +6,7 @@ if (!$conn) {
     die("Site niet bereikbaar " . mysqli_connect_error())
 }
   
-  $delete = "DELETE FROM members WHERE (volledige-naam, vereniging, datum, email, telnummer)";
+  $delete = "DELETE FROM members WHERE (volledige_naam, vereniging, datum, email, telnummer)";
   
   if (mysqli_query($conn, $delete)) {
     echo "Reservering succesvol verwijdert";
