@@ -1,6 +1,6 @@
 <?php
 
-$conn = mysqli_connect()
+$conn = mysqli_connect();
 
 if (!$conn) {
     die("Site niet bereikbaar door " . mysqli_connect_error());
@@ -52,7 +52,7 @@ if (!$conn) {
             <div id="blok1" style="background-color: white;" table,th,td {
                 border: 1px solid black;
             }>
-
+<?php
 $conn = mysqli_connect();
 if (!$conn) {
     die("Site niet bereikbaar door " . mysqli_connect_error());
@@ -73,6 +73,7 @@ if (mysqli_num_rows($result) > 0) {
 }
 
 mysqli_close($conn);
+?>
       </div>
 </form>
     </body>
