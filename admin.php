@@ -67,7 +67,7 @@ if (mysqli_num_rows($result) > 0) {
        echo "<tr><td>" . $row["volledige_naam"] "</td><td>" . $row["vereniging"] "</td><td>" . $row["datum"] "</td>
         <td>" . $row["email"] "</td><td>" . $row["telnummer"] "</td></tr>";
     }
-</table>
+
 } else {
     echo "0 results";
 }
