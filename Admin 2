@@ -1,6 +1,6 @@
 <?php
 
-$conn = mysqli_connect();
+$conn = mysqli_connect("localhost", "root", "", "john_database");
 
 if (!$conn) {
     die("Site niet bereikbaar door " . mysqli_connect_error());
@@ -53,7 +53,7 @@ if (!$conn) {
                 border: 1px solid black;
             }>
 <?php
-$conn = mysqli_connect();
+$conn = mysqli_connect("localhost", "root", "", "john_database");
 if (!$conn) {
     die("Site niet bereikbaar door " . mysqli_connect_error());
 }
@@ -65,7 +65,7 @@ if ($result->num_rows > 0) {
   // output data of each row
   while($row = $result->fetch_assoc()) {
     echo "Naam: " . $row["volledige_naam"]. " - Vereniging: " . $row["vereniging"]. " Datum: " . $row["datum"]. 
-    "Emailadres: " . $row["email"]. "Telefoonnummer: " . $row["telnummer"]."<br>";
+    "Emailadres: " . $row["email"]. "Telefoonnummer: " . $row["telnummer"] <br>;
   }
 } else {
   echo "0 results";
