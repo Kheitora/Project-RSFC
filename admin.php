@@ -57,8 +57,8 @@ if (!$conn) {
        
             <div id="blok1">
 			
-			</div>
-			</div>
+			
+			
             <?php
 
 // Create connection
@@ -85,7 +85,10 @@ if ($result->num_rows > 0) {
 $conn->close();
 ?>
             <div>
-			<input type="hidden" name="reservering verwijderen" value="<?php echo $row["volledige_naam"];">
 			</div>
+			<input type="hidden" name="reservering verwijderen" value="<?php echo $row["volledige_naam"]?> >
+			
+          </div>
+		  </div>
           </body>
           </html>
