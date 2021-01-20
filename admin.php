@@ -23,10 +23,15 @@ if (!$conn) {
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>RSFC</title>
-        <link rel="stylesheet" href="index.css">                                
+        <link rel="stylesheet" href="index.css">   
+        <style>
+          table, th, td {
+            border: 1px solid black
+          }
+        </style>
     </head>
     <body>
-	<div id="blok2">
+	<div id="blok2" > 
              <div id="menu">
                 <nav>
 				<h3>.....</h3>
@@ -52,7 +57,7 @@ if (!$conn) {
             <div id="blok1" style="background-color: white;" table,th,td {
                 border: 1px solid black;
             }>
-   }>
+
             <?php
 $servername = "localhost";
 $username = "username";
@@ -82,3 +87,9 @@ if ($result->num_rows > 0) {
 }
 $conn->close();
 ?>
+            <div>
+			<input type="button" name="verwijder afspraak" value="Verwijder reservering">
+			</div>
+          </body>
+          </html>
+		
