@@ -52,29 +52,33 @@ if (!$conn) {
             <div id="blok1" style="background-color: white;" table,th,td {
                 border: 1px solid black;
             }>
-<?php
-$conn = mysqli_connect();
-if (!$conn) {
-    die("Site niet bereikbaar door " . mysqli_connect_error());
+   }>
+            <?php
+$servername = "localhost";
+$username = "username";
+$password = "password";
+$dbname = "myDB";
+
+// Create connection
+$conn = new mysqli($servername, $username, $password, $dbname);
+// Check connection
+if ($conn->connect_error) {
+  die("Kan niet met server verbinden " . $conn->connect_error);
 }
 
 $show = "SELECT volledige_naam, vereniging, datum, email, telnummer FROM members";
-$result = mysqli_query($conn, $sql);
+$result = $conn->query($show);
 
-if (mysqli_num_rows($result) > 0) {
-
-    while($row = mysqli_fetch_assoc($result)) {
-       echo "<tr><td>" . $row["volledige_naam"] "</td><td>" . $row["vereniging"] "</td><td>" . $row["datum"] "</td>
-        <td>" . $row["email"] "</td><td>" . $row["telnummer"] "</td></tr>";
-    }
-
+if ($result->num_rows > 0) {
+  echo "<table><tr><th>Naam</th><th>Vereniging</th><th>Datum</th><th>E-mail</th><th>Telefoonnummer</th></tr>";
+  // output data of each row
+  while($row = $result->fetch_assoc()) {
+    echo "<tr><td>".$row["Naam"]."</td><td>".$row["Vereniging"]."</td><td>".$row["Datum"]."</td><td>".$row["email"]."</td>
+    <td>".$row["telnummer"]."</td></tr>";
+  }
+  echo "</table>";
 } else {
-    echo "0 results";
+  echo "0 results";
 }
-
-mysqli_close($conn);
+$conn->close();
 ?>
-      </div>
-</form>
-    </body>
-</html>
