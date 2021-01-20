@@ -1,6 +1,6 @@
 <?php
 
-$conn = mysqli_connect();
+$conn = mysqli_connect("localhost", "root", "", "john_database");
 
 if (!$conn) {
     die("Site niet bereikbaar door " . mysqli_connect_error());
@@ -54,18 +54,14 @@ if (!$conn) {
              </nav>   
             </div>
             <form action="" method="select">
-            <div id="blok1" style="background-color: white;" table,th,td {
-                border: 1px solid black;
-            }>
+            <div id="blok1" style="background-color: white;">
 
             <?php
-$servername = "localhost";
-$username = "username";
-$password = "password";
-$dbname = "myDB";
+
+
 
 // Create connection
-$conn = new mysqli($servername, $username, $password, $dbname);
+$conn = new mysqli("localhost", "root", "", "john_database");
 // Check connection
 if ($conn->connect_error) {
   die("Kan niet met server verbinden " . $conn->connect_error);
@@ -78,7 +74,7 @@ if ($result->num_rows > 0) {
   echo "<table><tr><th>Naam</th><th>Vereniging</th><th>Datum</th><th>E-mail</th><th>Telefoonnummer</th></tr>";
   // output data of each row
   while($row = $result->fetch_assoc()) {
-    echo "<tr><td>".$row["Naam"]."</td><td>".$row["Vereniging"]."</td><td>".$row["Datum"]."</td><td>".$row["email"]."</td>
+    echo "<tr><td>".$row["volledige_naam"]."</td><td>".$row["vereniging"]."</td><td>".$row["datum"]."</td><td>".$row["email"]."</td>
     <td>".$row["telnummer"]."</td></tr>";
   }
   echo "</table>";
