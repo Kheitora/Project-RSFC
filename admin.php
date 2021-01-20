@@ -31,7 +31,7 @@ if (!$conn) {
         </style>                             
     </head>
     <body>
-	<div id="blok2">
+    <div id="blok2">
              <div id="menu">
                 <nav>
 				<h3>.....</h3>
@@ -55,10 +55,12 @@ if (!$conn) {
              </nav>   
             </div>
        
-            <div id="blok1">
-			
-			
-			
+            <div id="blok1" style="background-color: white;">
+            </div>
+            <div>
+		    	<input type="button" name="reservering verwijderen" value="Reservering verwijderen">
+		    	</div>
+      </div>
             <?php
 
 // Create connection
@@ -84,11 +86,6 @@ if ($result->num_rows > 0) {
 }
 $conn->close();
 ?>
-            <div>
-			</div>
-			<input type="hidden" name="reservering verwijderen" value="<?php echo $row["volledige_naam"]?> >
-			
-          </div>
-		  </div>
+
           </body>
           </html>
