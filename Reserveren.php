@@ -13,23 +13,23 @@ if(isset($_POST['submit'])) {
  
  $errors = [];
  if($VolledigeNaam == ""){
- $errors['volledige-naam'] = "U moet uw naam invullen om verder te kunnen";
+ $errors['volledige-naam'] = "U moet uw naam invullen";
  }
  
  if($Vereniging == ""){
- $errors['vereniging'] = "U moet uw vereniging invullen om verder te kunnen";
+ $errors['vereniging'] = "U moet uw vereniging invullen";
  }
  
  if($Datum == ""){
- $errors['datum'] = "U moet de datum van de reservering invullen om verder te kunnen";
+ $errors['datum'] = "U moet de datum invullen";
  }
  
  if($Email == ""){
- $errors['email'] = "U moet uw email invullen om verder te kunnen";
+ $errors['email'] = "U moet uw email invullen";
  }
  
  if($Telefoonnummer == ""){
- $errors['telnummer'] = "U moet uw telefoonnummer invullen om verder te kunnen";
+ $errors['telnummer'] = "U moet uw telefoonnummer invullen";
  }
  
  if(empty($errors)){
@@ -148,4 +148,3 @@ if(isset($_POST['submit'])) {
 			</div>
 			</div>
     </body>
-</html>
