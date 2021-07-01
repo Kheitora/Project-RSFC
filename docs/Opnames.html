@@ -5,6 +5,14 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
+        <script>
+            function changeFontSize() {
+
+                document.getElementById("menu").style.float = 'right';
+            }
+
+        </script>
+
 
         <link rel="stylesheet" href="index.css">
     </header>
@@ -39,18 +47,19 @@
        
             <div id="blok1" style="background-color: white;">
 			
-<p> Arti et religioni</p>	
+<p> Arti et religioni</p>
 <audio controls>
    <source src="Arti.mp3" type="audio/mpeg">
 </audio>
-<p>Soli deo glorida Zaandam</p>
+                <p>Soli deo glorida Zaandam</p>
 <audio controls>
  <source src="Zaandam.mp3" type="audio/mpeg">
  </audio>
- <p>Crescendo muiden</p>
+                <p>Crescendo muiden</p>
  <audio controls>
  <source src="Crescendo.mp3" type="audio/mpeg">
  </audio>
+                <button type="button" onClick="changeFontSize()">change the font size</button>
  
 			</div>
 			</div>
